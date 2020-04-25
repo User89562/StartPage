@@ -1,0 +1,55 @@
+
+<mat-tab-group dynamicHeight>
+  <mat-tab *ngFor="let sp of startPageData" class="links-div" [label]='sp.tab'>
+    <div class="links-div">
+      <div class="header-links">
+        <div *ngFor="let link of sp.links" class="startpage-links">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+               <h1>{{link.header}}</h1>
+               <mat-divider></mat-divider>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-actions *ngFor="let u of link.urls" class="header-card">
+              <div class="sublinks-div">
+                <h3>{{u.subheader}}</h3>
+                <div *ngFor="let su of u.suburls" >
+                  <a mat-stroked-button href="{{su.url}}">
+                    {{su.urlName}}
+                  </a>
+                </div>
+             </div>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+
+<!--
+<mat-tab-group dynamicHeight>
+  <mat-tab *ngFor="let sp of startPageData" class="links-div" [label]='sp.tab'>
+    <div class="links-div">
+      <div class="header-links">
+        <div *ngFor="let link of sp.links" class="startpage-links">
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>
+               <h1>{{link.header}}</h1>
+              </mat-card-title>
+            </mat-card-header>
+            <mat-card-actions *ngFor="let u of link.urls" class="header-card">
+              <a mat-stroked-button href="{{u.url}}">
+                {{u.urlName}}
+              </a>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+-->
