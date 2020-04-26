@@ -10,7 +10,7 @@ export const STARTPAGE: StartPageLinks[] = [
           {
             suburls: [
               {
-                url: 'https://www.old.reddit.com',
+                url: 'https://old.reddit.com/',
                 urlName: 'Reddit',
               },
               {
