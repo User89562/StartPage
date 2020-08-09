@@ -21,6 +21,14 @@ export const STARTPAGE: StartPageLinks[] = [
                 url: 'https://github.com/login',
                 urlName: 'Github',
               },
+              {
+                url: 'https://twitter.com/',
+                urlName: 'Twitter',
+              },
+              {
+                url: 'https://www.google.com/gmail/',
+                urlName: 'Gmail',
+              },
             ]
           },
         ]
@@ -131,6 +139,10 @@ export const STARTPAGE: StartPageLinks[] = [
                 urlName: 'League',
               },
               {
+                url: 'https://old.reddit.com/r/VALORANT/',
+                urlName: 'Valorant',
+              },
+              {
                 url: 'https://old.reddit.com/r/ffxiv/',
                 urlName: 'FFXIV',
               },
@@ -165,7 +177,7 @@ export const STARTPAGE: StartPageLinks[] = [
           {
             suburls: [
               {
-                url: 'https:u.gg',
+                url: 'https://u.gg/',
                 urlName: 'Builds',
               },
               {
@@ -233,14 +245,6 @@ export const STARTPAGE: StartPageLinks[] = [
                 url: 'https://old.reddit.com/r/arknights/',
                 urlName: 'Arknights',
               },
-              {
-                url: 'https://old.reddit.com/r/DOAXVenusVacation/',
-                urlName: 'DoA Venus Vacation',
-              },
-              {
-                url: 'https://old.reddit.com/r/AzureLane/',
-                urlName: 'Azure Lane',
-              },
             ]
           },
           {
@@ -254,21 +258,13 @@ export const STARTPAGE: StartPageLinks[] = [
                 url: 'https://wiki.arknights.moe/Main_Page',
                 urlName: 'Arknights',
               },
-              {
-                url: 'https://doax.cc/english.html',
-                urlName: 'DoA X'
-              },
-              {
-                url: 'https://azurlane.koumakan.jp/Azur_Lane_Wiki',
-                urlName: 'AL'
-              }
             ]
           },
           {
             subheader: 'Other',
             suburls: [
               {
-                url: 'https://discordapp.com/login',
+                url: 'https://discord.com/login',
                 urlName: 'Discord',
               },
               {
@@ -278,6 +274,10 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://docs.google.com/spreadsheets/d/1iA07L2CvAgJkbRFvUGQToyO9RrZjJnNyAAtpKDD-Dvc/edit?usp=sharing',
                 urlName: 'Ranking Diary',
+              },
+              {
+                url: 'https://docs.google.com/spreadsheets/d/1MKEvSx9zcgvWnRhv9IoL_-XUuHOq5ESFCSlJkxuE6OU/edit#gid=0',
+                urlName: 'Armory',
               },
             ]
           },
@@ -329,7 +329,7 @@ export const STARTPAGE: StartPageLinks[] = [
                 urlName: 'Recipe Calculator',
               },
               {
-                url: 'https://tempkaridc.github.io/gf/',
+                url: 'https://gfgfork.github.io/gf/main.html',
                 urlName: 'Logistics Calculator',
               },
               {
@@ -404,6 +404,101 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://symphogearxd.gamewith.jp/article/show/60696',
                 urlName: 'Wiki/Ranking',
+              },
+            ]
+          },
+        ],
+      },
+    ],
+  },
+  {
+    tab: '',
+    links: [
+      {
+        header: 'Reddit',
+        urls: [
+          {
+            suburls: [
+              {
+                url: 'https://old.reddit.com/r/DOAXVenusVacation/',
+                urlName: 'DoA Venus Vacation',
+              },
+               {
+                url: 'https://old.reddit.com/r/AzureLane/',
+                urlName: 'Azure Lane',
+              },
+              {
+                url: 'https://old.reddit.com/r/grandorder/',
+                urlName: 'Fate Go',
+              },
+              {
+                url: 'https://old.reddit.com/r/SaGa_ReuniverSe/',
+                urlName: 'Romancing Saga',
+              },
+            ]
+          }
+        ],
+      },
+      {
+        header: 'Wiki',
+        urls: [
+          {
+            suburls: [
+              {
+                url: 'https://doax.cc/english.html',
+                urlName: 'DoA X'
+              },
+              {
+                url: 'https://azurlane.koumakan.jp/Azur_Lane_Wiki',
+                urlName: 'AL'
+              },
+              {
+                url: 'https://grandorder.wiki/Main_Page',
+                urlName: 'Fate Go'
+              }
+            ]
+          }
+        ],
+      },
+      {
+        header: 'Blogs',
+        urls: [
+          {
+            subheader: 'DOA Mods',
+            suburls: [
+              {
+                url: 'https://www.loverslab.com/forum/259-dead-or-alive-xtreme-venus-vacation/',
+                urlName: 'Loverslab',
+              },
+              {
+                url: 'https://www.loverslab.com/topic/114640-doaxvv-minazukis-mod/',
+                urlName: 'Minazuki Mod',
+              },
+            ]
+          },
+          {
+            subheader: 'FGO',
+            suburls: [
+              {
+                url: 'https://gamepress.gg/grandorder/',
+                urlName: 'Gamepress',
+              },
+              {
+                url: 'https://gamepress.gg/grandorder/event-guides',
+                urlName: 'Events',
+              },
+            ]
+          },
+        ],
+      },
+      {
+        header: 'Tools',
+        urls: [
+          {
+            suburls: [
+              {
+                url: 'https://shipfu.moe/fgo/',
+                urlName: 'Fate Save Cal',
               },
             ]
           }
