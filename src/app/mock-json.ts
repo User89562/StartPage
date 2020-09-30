@@ -106,6 +106,10 @@ export const STARTPAGE: StartPageLinks[] = [
                 url: 'https://material.io/resources/color/#!/?view.left=0&view.right=0',
                 urlName: 'Color Picker',
               },
+              {
+                url: 'https://material.io/resources/icons/?style=baseline',
+                urlName: 'Angular Icons',
+              },
             ]
           }
         ],
@@ -245,6 +249,10 @@ export const STARTPAGE: StartPageLinks[] = [
                 url: 'https://old.reddit.com/r/arknights/',
                 urlName: 'Arknights',
               },
+              {
+                url: 'https://old.reddit.com/r/genshin_impact/',
+                urlName: 'Genshin Impact',
+              },
             ]
           },
           {
@@ -348,6 +356,15 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://aceship.github.io/AN-EN-Tags/akhr.html',
                 urlName: 'Recruitment',
+              },
+            ]
+          },
+          {
+            subheader: 'Genshin',
+            suburls: [
+              {
+                url: 'https://genshin-impact-map.appsample.com/',
+                urlName: 'Map',
               },
             ]
           }

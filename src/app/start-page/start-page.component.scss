@@ -19,8 +19,11 @@ h3 {
 }
 
 .header-links {
-  float:left;
   padding: 10px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .startpage-links {
@@ -33,6 +36,7 @@ h3 {
   padding-top: 3.5%;
   margin-left:15%;
   margin-right:15%;
+  
 }
 
 
