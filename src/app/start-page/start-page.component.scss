@@ -55,6 +55,9 @@ mat-card-actions {
 
 .sublinks-div a{
   margin-bottom: 8px;
+  &:hover {
+    opacity: 0.65;
+  }
 }
 
 

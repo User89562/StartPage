@@ -12,10 +12,10 @@
               </mat-card-title>
             </mat-card-header>
             <mat-card-actions *ngFor="let u of link.urls" class="header-card">
-              <div class="sublinks-div">
-                <h3>{{u.subheader}}</h3>
+              <div class="sublinks-div" >
+                <h3 [ngStyle]="{'color': u?.fontColor}">{{u.subheader}}</h3>
                 <div *ngFor="let su of u.suburls" >
-                  <a mat-stroked-button href="{{su.url}}">
+                  <a mat-stroked-button href="{{su.url}}" [ngStyle]="{'background-color': su?.backgroundColor}" >
                     {{su.urlName}}
                   </a>
                 </div>

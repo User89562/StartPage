@@ -1,5 +1,67 @@
 import { StartPageLinks} from './data-classes/json-class';
 
+class Colors {
+  static red(): string {
+    return '#ba000d';
+  }
+  static green(n: number): string {
+    switch (n){
+      case 2:
+        return '#00701a';
+      default:
+        return '#003d00';
+    }
+  }
+  static cyan(): string {
+    return '#007c91';
+  }
+
+  static purple(n: number): string {
+    switch (n){
+      case 1:
+        return '#7e57c2';
+      default:
+        return '#5c007a';
+    }
+  }
+
+  static blueGrey(): string {
+    return '#1c313a';
+  }
+
+  static yellow(n: number): string {
+    switch (n){
+      case 2:
+        return '#bb4d00';
+      default:
+        return '#bc5100';
+    }
+  }
+
+  static indigo(n: number): string {
+    switch (n){
+      case 2:
+        return '#26418f';
+      default:
+        return '#002171';
+    }
+  }
+  static blue(n: number): string {
+    switch (n){
+      case 1:
+        return '#005b9f';
+      case 2:
+        return '#0077c2';
+      case 3:
+        return '#0064b7';
+      case 4:
+        return '#005cb2';
+      default:
+        return '#003c8f';
+    }
+  }
+}
+
 export const STARTPAGE: StartPageLinks[] = [
   {
     tab: 'Home',
@@ -12,10 +74,12 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://old.reddit.com/',
                 urlName: 'Reddit',
+                backgroundColor: Colors.red(),
               },
               {
                 url: 'https://open.spotify.com/',
                 urlName: 'Spotify',
+                backgroundColor: Colors.green(1)
               },
               {
                 url: 'https://github.com/login',
@@ -24,10 +88,12 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://twitter.com/',
                 urlName: 'Twitter',
+                backgroundColor: Colors.cyan()
               },
               {
                 url: 'https://www.google.com/gmail/',
                 urlName: 'Gmail',
+                backgroundColor: Colors.green(2)
               },
             ]
           },
@@ -41,6 +107,7 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://www.twitch.tv/directory/all',
                 urlName: 'Twitch',
+                backgroundColor: Colors.purple(0)
               },
               {
                 url: 'https://www.youtube.com/',
@@ -79,6 +146,7 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'http://192.168.1.15:8080',
                 urlName: 'Downloader',
+                backgroundColor: Colors.blueGrey()
               },
             ]
           },
@@ -137,10 +205,12 @@ export const STARTPAGE: StartPageLinks[] = [
         urls: [
           {
             subheader: 'Reddit',
+            fontColor: Colors.red(),
             suburls: [
               {
                 url: 'https://old.reddit.com/r/leagueoflegends/',
                 urlName: 'League',
+                backgroundColor: Colors.yellow(1)
               },
               {
                 url: 'https://old.reddit.com/r/VALORANT/',
@@ -149,6 +219,7 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://old.reddit.com/r/ffxiv/',
                 urlName: 'FFXIV',
+                backgroundColor: Colors.indigo(1)
               },
               {
                 url: 'https://old.reddit.com/r/EscapefromTarkov/',
@@ -162,10 +233,12 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://leagueoflegends.fandom.com/wiki/League_of_Legends_Wiki',
                 urlName: 'League',
+                backgroundColor: Colors.yellow(1)
               },
               {
                 url: 'https://ffxiv.gamerescape.com/wiki/Main_Page',
                 urlName: 'FFXIV',
+                backgroundColor: Colors.indigo(1)
               },
               {
                 url: 'https://escapefromtarkov.gamepedia.com/Escape_from_Tarkov_Wiki',
@@ -183,6 +256,7 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://u.gg/',
                 urlName: 'Builds',
+                backgroundColor: Colors.yellow(2)
               },
               {
                 url: 'https://na.op.gg/',
@@ -200,10 +274,12 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://super-aardvark.github.io/yuryu/',
                 urlName: 'Cactpot Solver',
+
               },
               {
                 url: 'https://arrtripletriad.com/',
                 urlName: 'Triple Triad',
+                backgroundColor: Colors.indigo(1)
               },
             ]
           },
@@ -236,6 +312,7 @@ export const STARTPAGE: StartPageLinks[] = [
         urls: [
           {
             subheader: 'Reddit',
+            fontColor: Colors.red(),
             suburls: [
               {
                 url: 'https://old.reddit.com/r/gachagaming/',
@@ -244,14 +321,17 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://old.reddit.com/r/girlsfrontline/',
                 urlName: 'Girl\'s Frontline',
+                backgroundColor: Colors.blue(0)
               },
               {
                 url: 'https://old.reddit.com/r/arknights/',
                 urlName: 'Arknights',
+                backgroundColor: Colors.green(1)
               },
               {
                 url: 'https://old.reddit.com/r/genshin_impact/',
                 urlName: 'Genshin Impact',
+                backgroundColor: Colors.purple(0)
               },
             ]
           },
@@ -261,15 +341,18 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://en.gfwiki.com/wiki/Girls%27_Frontline_Wiki',
                 urlName: 'GFL',
+                backgroundColor: Colors.blue(0)
               },
               {
                 url: 'https://wiki.arknights.moe/Main_Page',
                 urlName: 'Arknights',
+                backgroundColor: Colors.green(1)
               },
             ]
           },
           {
             subheader: 'Other',
+            fontColor: Colors.yellow(1),
             suburls: [
               {
                 url: 'https://discord.com/login',
@@ -277,15 +360,18 @@ export const STARTPAGE: StartPageLinks[] = [
               },
               {
                 url: 'https://docs.google.com/spreadsheets/d/1by5rcLdKXdhLClfVQ-FLvK_OM4Xko0CT9peKQwQCfXw/edit?usp=sharing',
-                urlName: 'Gacha Doc',
+                urlName: 'GFL Doc',
+                backgroundColor: Colors.blue(0)
               },
               {
                 url: 'https://docs.google.com/spreadsheets/d/1iA07L2CvAgJkbRFvUGQToyO9RrZjJnNyAAtpKDD-Dvc/edit?usp=sharing',
                 urlName: 'Ranking Diary',
+                backgroundColor: Colors.indigo(1)
               },
               {
                 url: 'https://docs.google.com/spreadsheets/d/1MKEvSx9zcgvWnRhv9IoL_-XUuHOq5ESFCSlJkxuE6OU/edit#gid=0',
                 urlName: 'Armory',
+                backgroundColor: Colors.indigo(2)
               },
             ]
           },
@@ -296,10 +382,12 @@ export const STARTPAGE: StartPageLinks[] = [
         urls: [
           {
             subheader: 'GFL',
+            fontColor: Colors.blue(2),
             suburls: [
               {
                 url: 'https://www.gflcorner.com/',
                 urlName: 'GFL Corner',
+                backgroundColor: Colors.blue(0)
               },
               {
                 url: 'https://gfl.matsuda.tips/blog/',
@@ -317,10 +405,12 @@ export const STARTPAGE: StartPageLinks[] = [
           },
           {
             subheader: 'Arknights',
+            fontColor: Colors.green(2),
             suburls: [
               {
                 url: 'https://gamepress.gg/arknights/',
                 urlName: 'Gamepress Articles',
+                backgroundColor: Colors.green(1)
               },
             ]
           }
@@ -331,6 +421,7 @@ export const STARTPAGE: StartPageLinks[] = [
         urls: [
           {
             subheader: 'GFL',
+            fontColor: Colors.blue(2),
             suburls: [
               {
                 url: 'https://aaeeschylus.github.io/main.html',
@@ -343,6 +434,7 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://gfl.matsuda.tips/combatsim/',
                 urlName: 'Damage Simulation',
+                backgroundColor: Colors.blue(0)
               },
               {
                 url: 'https://hycdes.com/pages/GFT_ChipCal-EN.html',
@@ -352,19 +444,23 @@ export const STARTPAGE: StartPageLinks[] = [
           },
           {
             subheader: 'Arknights',
+            fontColor: Colors.green(2),
             suburls: [
               {
                 url: 'https://aceship.github.io/AN-EN-Tags/akhr.html',
                 urlName: 'Recruitment',
+                backgroundColor: Colors.green(1)
               },
             ]
           },
           {
             subheader: 'Genshin',
+            fontColor: Colors.purple(1),
             suburls: [
               {
                 url: 'https://genshin-impact-map.appsample.com/',
                 urlName: 'Map',
+                backgroundColor: Colors.purple(0)
               },
             ]
           }
@@ -375,6 +471,7 @@ export const STARTPAGE: StartPageLinks[] = [
         urls: [
           {
             subheader: 'GFL',
+            fontColor: Colors.blue(2),
             suburls: [
               {
                 url: 'https://docs.google.com/spreadsheets/d/10LJdksnM3zipOb72IneJD7WVp3765JYJEGg0LnodzDI/edit#gid=516072763',
@@ -383,6 +480,7 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://gf.hometehomete.com/en/',
                 urlName: 'Maps',
+                backgroundColor: Colors.blue(0)
               },
               {
                 url: 'https://docs.google.com/spreadsheets/d/1TjHC4Vaed8dFqSkagM6teNlmBjFGPiUbTRnTnvxnnu4/edit#gid=296924292',
@@ -395,15 +493,18 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://docs.google.com/document/d/1nRRyH9IH7dg7BRow8Y_hh2bNAlLxtpRB6cr_kzl_5NE/edit#',
                 urlName: 'Next Ranking',
+                backgroundColor: Colors.blue(0)
               },
             ]
           },
           {
             subheader: 'Arknights',
+            fontColor: Colors.green(2),
             suburls: [
               {
                 url: 'https://gamepress.gg/arknights/tier-list/arknights-operator-tier-list',
                 urlName: 'Tier',
+                backgroundColor: Colors.green(1)
               },
               {
                 url: 'https://docs.google.com/spreadsheets/d/1L5smDJR2_4JCLvDJpT2Cz94inl8MFtRXH-xEOyuahIA/edit#gid=0',
@@ -412,15 +513,6 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://imgur.com/a/Lh1qfDi',
                 urlName: 'CN Tier List',
-              },
-            ]
-          },
-          {
-            subheader: 'Symphogear',
-            suburls: [
-              {
-                url: 'https://symphogearxd.gamewith.jp/article/show/60696',
-                urlName: 'Wiki/Ranking',
               },
             ]
           },
@@ -439,14 +531,17 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://old.reddit.com/r/DOAXVenusVacation/',
                 urlName: 'DoA Venus Vacation',
+                backgroundColor: Colors.green(0)
               },
                {
                 url: 'https://old.reddit.com/r/AzureLane/',
                 urlName: 'Azure Lane',
+                backgroundColor: Colors.blue(0)
               },
               {
                 url: 'https://old.reddit.com/r/grandorder/',
                 urlName: 'Fate Go',
+                backgroundColor: Colors.purple(0)
               },
               {
                 url: 'https://old.reddit.com/r/SaGa_ReuniverSe/',
@@ -463,15 +558,18 @@ export const STARTPAGE: StartPageLinks[] = [
             suburls: [
               {
                 url: 'https://doax.cc/english.html',
-                urlName: 'DoA X'
+                urlName: 'DoA X',
+                backgroundColor: Colors.green(0)
               },
               {
                 url: 'https://azurlane.koumakan.jp/Azur_Lane_Wiki',
-                urlName: 'AL'
+                urlName: 'AL',
+                backgroundColor: Colors.blue(0)
               },
               {
                 url: 'https://grandorder.wiki/Main_Page',
-                urlName: 'Fate Go'
+                urlName: 'Fate Go',
+                backgroundColor: Colors.purple(0)
               }
             ]
           }
@@ -486,6 +584,7 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://www.loverslab.com/forum/259-dead-or-alive-xtreme-venus-vacation/',
                 urlName: 'Loverslab',
+                backgroundColor: Colors.green(0)
               },
               {
                 url: 'https://www.loverslab.com/topic/114640-doaxvv-minazukis-mod/',
@@ -503,6 +602,7 @@ export const STARTPAGE: StartPageLinks[] = [
               {
                 url: 'https://gamepress.gg/grandorder/event-guides',
                 urlName: 'Events',
+                backgroundColor: Colors.purple(0)
               },
             ]
           },
